@@ -17,6 +17,7 @@ function getProxy()
 	chrome.proxy.settings.get( {'incognito': false},
 		(config) => { 
 			let tickbox = document.form1.handshake;
+			console.log(config.value);
 			if (tickbox) 
 				tickbox.checked = (config.value.mode == "fixed_servers");
 			});
@@ -33,7 +34,7 @@ function setProxyOn()
 				host: "109.169.23.69",
 				port: 3128
 				},
-			bypassList: ["<local>","*.co","*.ly","*.com","*.net","*.uk","*.us","*.de"]
+			bypassList: ["*.ly","*.co","*.com","*.net","*.uk","*.us","*.de"]
 			}
 		};
 	chrome.proxy.settings.set({value: config, scope: "regular"}, () => { getProxy() });
