@@ -1,0 +1,22 @@
+{
+	"name": "Handshake Gateway",
+	"description": "Handshake Gateway",
+	"version": "1.0",
+	"manifest_version": 3,
+	"permissions": ["storage","scripting","proxy"],
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "16.png",
+			"32": "32.png",
+			"48": "48.png",
+			"128": "128.png"
+			}
+	},
+	"icons": {
+		"16": "16.png",
+		"32": "32.png",
+		"48": "48.png",
+		"128": "128.png"
+		}
+}
